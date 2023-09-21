@@ -1,7 +1,9 @@
 import { FaMapLocationDot } from "react-icons/fa6";
 import { PiCurrencyCircleDollarBold } from "react-icons/pi";
+import { Link } from "react-router-dom";
 const Job = ({ job }) => {
   const {
+    id,
     logo,
     job_title,
     company_name,
@@ -42,9 +44,11 @@ const Job = ({ job }) => {
           </h2>
         </div>
         <div className="card-actions ">
-          <button className="btn btn-primary  bg-gradient-to-r from-violet-500 to-fuchsia-500">
-            View Details
-          </button>
+          <Link to={`/job/${id}`}>
+            <button className="btn btn-primary  bg-gradient-to-r from-violet-500 to-fuchsia-500">
+              View Details
+            </button>
+          </Link>
         </div>
       </div>
     </div>
