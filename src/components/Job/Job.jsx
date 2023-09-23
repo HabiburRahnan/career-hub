@@ -11,11 +11,6 @@ const Job = ({ job }) => {
     location,
     job_type,
     salary,
-    job_description,
-    job_responsibility,
-    educational_requirements,
-    experiences,
-    contact_information,
   } = job;
   return (
     <div className="card card-compact  bg-base-100 shadow-xl">
